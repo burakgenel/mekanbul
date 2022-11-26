@@ -5,9 +5,9 @@
     "passes": 9,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-26T20:56:56.320Z",
-    "end": "2022-11-26T20:56:56.723Z",
-    "duration": 403,
+    "start": "2022-11-26T22:17:13.871Z",
+    "end": "2022-11-26T22:17:13.967Z",
+    "duration": 96,
     "testsRegistered": 9,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "34e61f3f-44d5-4ea7-9067-2d075601692c",
+      "uuid": "38cae508-f0c8-4382-85b5-db4a34dcbb6f",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -28,7 +28,7 @@
           "title": "\"after all\" hook in \"{root}\"",
           "fullTitle": "\"after all\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 0,
+          "duration": 1,
           "state": null,
           "speed": null,
           "pass": false,
@@ -37,8 +37,8 @@
           "context": null,
           "code": "done();",
           "err": {},
-          "uuid": "5c890c6b-f9fb-4a4c-a901-0ae5f942bb65",
-          "parentUUID": "34e61f3f-44d5-4ea7-9067-2d075601692c",
+          "uuid": "818f001e-152f-4aab-94fc-fe0a1640f250",
+          "parentUUID": "38cae508-f0c8-4382-85b5-db4a34dcbb6f",
           "isHook": true,
           "skipped": false
         }
@@ -46,7 +46,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f4c015e0-8572-41d4-9fab-8aec1333ab47",
+          "uuid": "b216f4e0-9f5d-405d-99b0-8db1f0722a14",
           "title": "POST /api/mekanlar",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -57,84 +57,6 @@
               "title": "Yeni mekan ekle:",
               "fullTitle": "POST /api/mekanlar Yeni mekan ekle:",
               "timedOut": false,
-              "duration": 148,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const response = await request.post(\"/api/mekanlar\").send({\n  ad: \"Starbucks\",\n  adres: \"Centrum Garden\",\n  puan: 5,\n  imkanlar: \"çay,kahve,pasta\",\n  enlem: 37.83226584629666,\n  boylam: 30.524732239878013,\n  gunler1: \"Pazartesi-Cuma\",\n  acilis1: \"9:00\",\n  kapanis1: \"23:00\",\n  kapali1: false,\n  gunler2: \"Cumartesi-Pazar\",\n  acilis2: \"11:00\",\n  kapanis2: \"17:00\",\n  kapali2: false,\n});\nexpect(response.status).to.eql(201);\nprocess.env.mekanid = response.body._id;",
-              "err": {},
-              "uuid": "a7ffd154-9561-45e3-a937-01e1f7ece238",
-              "parentUUID": "f4c015e0-8572-41d4-9fab-8aec1333ab47",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "a7ffd154-9561-45e3-a937-01e1f7ece238"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 148,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
-        },
-        {
-          "uuid": "60758d0d-d848-4a62-b05b-a287ff86708d",
-          "title": "GET /api/mekanlar",
-          "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
-          "file": "\\test.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Girilen konum civarındaki tüm mekanları listele:",
-              "fullTitle": "GET /api/mekanlar Girilen konum civarındaki tüm mekanları listele:",
-              "timedOut": false,
-              "duration": 88,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const response = await request.get(\"/api/mekanlar?enlem=37&boylam=35\");\nexpect(response.status).to.eql(200);",
-              "err": {},
-              "uuid": "eb846893-ba59-4ab6-bdc3-fd59ec794ca1",
-              "parentUUID": "60758d0d-d848-4a62-b05b-a287ff86708d",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "eb846893-ba59-4ab6-bdc3-fd59ec794ca1"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 88,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 10000
-        },
-        {
-          "uuid": "0fbc9f35-88c6-42c2-a60d-e278b5861549",
-          "title": "GET /api/mekanlar/:mekanid",
-          "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
-          "file": "\\test.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Mekan getir:",
-              "fullTitle": "GET /api/mekanlar/:mekanid Mekan getir:",
-              "timedOut": false,
               "duration": 28,
               "state": "passed",
               "speed": "fast",
@@ -142,17 +64,17 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const response = await request.get(`/api/mekanlar/${process.env.mekanid}`);\nexpect(response.status).to.eql(200);",
+              "code": "const response = await request.post(\"/api/mekanlar\").send({\n  ad: \"Starbucks\",\n  adres: \"Centrum Garden\",\n  puan: 5,\n  imkanlar: \"çay,kahve,pasta\",\n  enlem: 37.83226584629666,\n  boylam: 30.524732239878013,\n  gunler1: \"Pazartesi-Cuma\",\n  acilis1: \"9:00\",\n  kapanis1: \"23:00\",\n  kapali1: false,\n  gunler2: \"Cumartesi-Pazar\",\n  acilis2: \"11:00\",\n  kapanis2: \"17:00\",\n  kapali2: false,\n});\nexpect(response.status).to.eql(201);\nprocess.env.mekanid = response.body._id;",
               "err": {},
-              "uuid": "2ebca0b3-8e61-475c-93f2-85a8fd9dcdcf",
-              "parentUUID": "0fbc9f35-88c6-42c2-a60d-e278b5861549",
+              "uuid": "5d582b40-f73c-481f-8b1a-af11070c9cf0",
+              "parentUUID": "b216f4e0-9f5d-405d-99b0-8db1f0722a14",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2ebca0b3-8e61-475c-93f2-85a8fd9dcdcf"
+            "5d582b40-f73c-481f-8b1a-af11070c9cf0"
           ],
           "failures": [],
           "pending": [],
@@ -163,7 +85,85 @@
           "_timeout": 10000
         },
         {
-          "uuid": "91e1d9c2-f25d-4f1b-a22b-bb5af435f541",
+          "uuid": "b0bdf52f-c661-4d3f-b23e-cf60c6ee1645",
+          "title": "GET /api/mekanlar",
+          "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
+          "file": "\\test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Girilen konum civarındaki tüm mekanları listele:",
+              "fullTitle": "GET /api/mekanlar Girilen konum civarındaki tüm mekanları listele:",
+              "timedOut": false,
+              "duration": 8,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await request.get(\"/api/mekanlar?enlem=37&boylam=35\");\nexpect(response.status).to.eql(200);",
+              "err": {},
+              "uuid": "1b50ec3a-4443-4330-b372-d345cd0e4536",
+              "parentUUID": "b0bdf52f-c661-4d3f-b23e-cf60c6ee1645",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1b50ec3a-4443-4330-b372-d345cd0e4536"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "204fe498-6edf-4c90-bf6e-8c637634ec0f",
+          "title": "GET /api/mekanlar/:mekanid",
+          "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
+          "file": "\\test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Mekan getir:",
+              "fullTitle": "GET /api/mekanlar/:mekanid Mekan getir:",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await request.get(`/api/mekanlar/${process.env.mekanid}`);\nexpect(response.status).to.eql(200);",
+              "err": {},
+              "uuid": "0ea3912e-4791-4cfa-bb61-c469eaae343d",
+              "parentUUID": "204fe498-6edf-4c90-bf6e-8c637634ec0f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ea3912e-4791-4cfa-bb61-c469eaae343d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "7626d9e2-a9e9-4cee-862c-e6a4b38362e7",
           "title": "PUT /api/mekanlar/:mekanid",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -174,7 +174,7 @@
               "title": "Mekan Güncelle:",
               "fullTitle": "PUT /api/mekanlar/:mekanid Mekan Güncelle:",
               "timedOut": false,
-              "duration": 31,
+              "duration": 10,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -183,26 +183,26 @@
               "context": null,
               "code": "const response = await request\n  .put(`/api/mekanlar/${process.env.mekanid}`)\n  .send({\n    ad: \"Starbucks SDÜ\",\n    adres: \"SDÜ Doğu Kampüsü\",\n    puan: 3,\n    imkanlar: \"çay,kahve,pasta,refresher\",\n    enlem: 37.8,\n    boylam: 30.5,\n    gunler1: \"Pazartesi-Cuma\",\n    acilis1: \"9:10\",\n    kapanis1: \"23:10\",\n    kapali1: true,\n    gunler2: \"Cumartesi-Pazar\",\n    acilis2: \"11:10\",\n    kapanis2: \"17:10\",\n    kapali2: true,\n  });\nexpect(response.status).to.eql(200);",
               "err": {},
-              "uuid": "c8c64f44-95c7-46fa-8c82-56cadd54a5b2",
-              "parentUUID": "91e1d9c2-f25d-4f1b-a22b-bb5af435f541",
+              "uuid": "51755271-90bc-4e11-b398-9f70161bed09",
+              "parentUUID": "7626d9e2-a9e9-4cee-862c-e6a4b38362e7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c8c64f44-95c7-46fa-8c82-56cadd54a5b2"
+            "51755271-90bc-4e11-b398-9f70161bed09"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 31,
+          "duration": 10,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "7392dcf2-3845-450c-b7ab-8a05435781e4",
+          "uuid": "bea4e59f-6ef4-4f20-877b-24dd337ba841",
           "title": "POST /api/mekanlar/:mekanid/yorumlar",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -213,7 +213,7 @@
               "title": "Yorum ekle:",
               "fullTitle": "POST /api/mekanlar/:mekanid/yorumlar Yorum ekle:",
               "timedOut": false,
-              "duration": 17,
+              "duration": 7,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -222,26 +222,26 @@
               "context": null,
               "code": "const response = await request\n  .post(`/api/mekanlar/${process.env.mekanid}/yorumlar`)\n  .send({\n    yorumYapan: \"ASY\",\n    puan: 5,\n    yorumMetni: \"Kahveler harika\",\n  });\nprocess.env.yorumid = response.body._id;\nexpect(response.status).to.eql(201);",
               "err": {},
-              "uuid": "7726f4a7-fe1d-4290-987c-d4a907256380",
-              "parentUUID": "7392dcf2-3845-450c-b7ab-8a05435781e4",
+              "uuid": "43245a16-6e98-40da-945d-6a42a606f9f9",
+              "parentUUID": "bea4e59f-6ef4-4f20-877b-24dd337ba841",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7726f4a7-fe1d-4290-987c-d4a907256380"
+            "43245a16-6e98-40da-945d-6a42a606f9f9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17,
+          "duration": 7,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "6ef512c4-5fad-4bd8-9b4a-e73ff3ac557c",
+          "uuid": "98a75575-5e47-43c7-997d-547944797791",
           "title": "GET /api/mekanlar/:mekanid/yorumlar/:yorumid",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -252,7 +252,7 @@
               "title": "Yorum getir:",
               "fullTitle": "GET /api/mekanlar/:mekanid/yorumlar/:yorumid Yorum getir:",
               "timedOut": false,
-              "duration": 15,
+              "duration": 5,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -261,26 +261,26 @@
               "context": null,
               "code": "const response = await request.get(\n  `/api/mekanlar/${process.env.mekanid}/yorumlar/${process.env.yorumid}`\n);\nexpect(response.status).to.eql(200);",
               "err": {},
-              "uuid": "ada0f33e-adf7-473b-ad58-0a07c4e4f2b3",
-              "parentUUID": "6ef512c4-5fad-4bd8-9b4a-e73ff3ac557c",
+              "uuid": "3843890a-54b2-479a-895a-f3fdc169ccf9",
+              "parentUUID": "98a75575-5e47-43c7-997d-547944797791",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ada0f33e-adf7-473b-ad58-0a07c4e4f2b3"
+            "3843890a-54b2-479a-895a-f3fdc169ccf9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15,
+          "duration": 5,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "a9def962-9758-456a-9bda-bc866ab40f49",
+          "uuid": "e13bb13f-9be2-487c-a3e8-d5f4ff32f3fe",
           "title": "PUT /api/mekanlar/:mekanid/yorumlar/:yorumid",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -291,7 +291,7 @@
               "title": "Yorum güncelle:",
               "fullTitle": "PUT /api/mekanlar/:mekanid/yorumlar/:yorumid Yorum güncelle:",
               "timedOut": false,
-              "duration": 13,
+              "duration": 7,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -300,26 +300,26 @@
               "context": null,
               "code": "const response = await request\n  .put(\n    `/api/mekanlar/${process.env.mekanid}/yorumlar/${process.env.yorumid}`\n  )\n  .send({\n    yorumYapan: \"Sinan\",\n    puan: 4,\n    yorumMetni: \"Kahveler harikaaaa\",\n  });\nexpect(response.status).to.eql(200);",
               "err": {},
-              "uuid": "715f0051-b7e3-4a60-b05f-65b7a3c74921",
-              "parentUUID": "a9def962-9758-456a-9bda-bc866ab40f49",
+              "uuid": "a02f91db-bc5b-4006-b017-23b752779bf1",
+              "parentUUID": "e13bb13f-9be2-487c-a3e8-d5f4ff32f3fe",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "715f0051-b7e3-4a60-b05f-65b7a3c74921"
+            "a02f91db-bc5b-4006-b017-23b752779bf1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13,
+          "duration": 7,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "714129be-8d72-4473-9ee7-cff5075605c8",
+          "uuid": "c3e60a95-d6dc-492b-bc79-9e9d75a36373",
           "title": "DELETE /api/mekanlar/:mekanid/yorumlar/:yorumid",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -330,7 +330,7 @@
               "title": "Yorum sil:",
               "fullTitle": "DELETE /api/mekanlar/:mekanid/yorumlar/:yorumid Yorum sil:",
               "timedOut": false,
-              "duration": 17,
+              "duration": 7,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -339,26 +339,26 @@
               "context": null,
               "code": "const response = await request.delete(\n  `/api/mekanlar/${process.env.mekanid}/yorumlar/${process.env.yorumid}`\n);\nexpect(response.status).to.eql(200);",
               "err": {},
-              "uuid": "aca8cf63-d23f-4dd1-a53b-e01d394636e6",
-              "parentUUID": "714129be-8d72-4473-9ee7-cff5075605c8",
+              "uuid": "741504d8-2497-4915-b231-64b10a79adfb",
+              "parentUUID": "c3e60a95-d6dc-492b-bc79-9e9d75a36373",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "aca8cf63-d23f-4dd1-a53b-e01d394636e6"
+            "741504d8-2497-4915-b231-64b10a79adfb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17,
+          "duration": 7,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "6a613a49-5b63-4a3a-bbfc-c679bceace08",
+          "uuid": "378e091c-1e0b-40ec-ace7-814da6bd1b0d",
           "title": "DELETE /api/mekanlar/:mekanid",
           "fullFile": "C:\\Users\\burak\\Desktop\\mekanbul\\test.js",
           "file": "\\test.js",
@@ -369,7 +369,7 @@
               "title": "Mekan sil:",
               "fullTitle": "DELETE /api/mekanlar/:mekanid Mekan sil:",
               "timedOut": false,
-              "duration": 15,
+              "duration": 5,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -378,20 +378,20 @@
               "context": null,
               "code": "const response = await request.delete(\n  `/api/mekanlar/${process.env.mekanid}`\n);\nexpect(response.status).to.eql(200);",
               "err": {},
-              "uuid": "1bc56d74-c4be-4c67-99a3-8e12e19d6796",
-              "parentUUID": "6a613a49-5b63-4a3a-bbfc-c679bceace08",
+              "uuid": "ecdc8105-1337-40be-a0ce-b6c98375e25f",
+              "parentUUID": "378e091c-1e0b-40ec-ace7-814da6bd1b0d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1bc56d74-c4be-4c67-99a3-8e12e19d6796"
+            "ecdc8105-1337-40be-a0ce-b6c98375e25f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15,
+          "duration": 5,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
