@@ -1,1 +1,1 @@
-https://mekanbul.burakfarukgenel.repl.co/?enlem=37&boylam=35
+https://mekanbul8.burakfarukgenel.repl.co/?enlem=37&boylam=35

@@ -3,7 +3,7 @@ require("./mekansema");
 var dbURI = 'mongodb+srv://burak123:burak123@mekanbul.sfoucft.mongodb.net/mekanbul?retryWrites=true&w=majority';
 //var dbURI = 'mongodb://localhost/mekanbul';
 
-mongoose.connect(dbURI);
+mongoose.connect(dbURI);    
 function kapat(msg,callback){
     mongoose.connection.close(function(){
         console.log(msg);
